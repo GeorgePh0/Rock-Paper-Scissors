@@ -1,3 +1,11 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# selects a random option
+import random
+
+def welcome():
+    print("Welcome to Rock Paper Scissor. \n"
+    "If you want to learn the rules of the game then press 'y' \n"
+    "If you want to go straight into the game then press 'n' \n")
+
+
+welcome()
+
