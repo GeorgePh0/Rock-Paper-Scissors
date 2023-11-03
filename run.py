@@ -46,6 +46,17 @@ def rules():
                 print("game")
             break
 
-welcome()
-rules()
 
+def start_game():
+    options = ["rock", "paper", "scissors"]
+    player_option = input("please choose rock, paper or scissors : ")
+    while True:
+        if player_option not in ["rock", "paper", "scissors"]:
+            player_option = input("Not valiad answer. Please choose rock, paper or scissors : ")
+            continue
+        else:
+            print("well done")
+        break
+
+
+start_game()
