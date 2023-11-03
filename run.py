@@ -17,5 +17,18 @@ def welcome():
             print(f'Hi {player}, welcome to the game')
             return player
 
+
+def rules():
+    rules = input("If you would like to see the rules to the game press 'y'. \n"
+    "If you would like to go into the game then press 'n'")
+    print(rules)
+    if rules == 'y':
+        print("rules")
+    elif rules == 'n':
+        print("game")
+    else:
+        print("invalid")
+
 welcome()
+rules()
 
