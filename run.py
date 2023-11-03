@@ -19,15 +19,22 @@ def welcome():
 
 
 def rules():
-    rules = input("If you would like to see the rules to the game press 'y'. \n"
-    "If you would like to go into the game then press 'n'")
+    rules = input("\n If you would like to see the rules to the game press 'y'. \n"
+    "If you would like to go into the game then press 'n' \n")
     print(rules)
-    if rules == 'y':
-        print("rules")
-    elif rules == 'n':
-        print("game")
-    else:
-        print("invalid")
+    while True:
+        if rules not in ["y", "n"]:
+            rules = input("Not valid answer. would you like the rules Y / N \n")
+            continue
+        else:
+            if rules == 'y':
+                print("The rules of Rock, Paper, Scissors is simple. \n"
+                "Rock beats Scissors \n"
+                "Scissors beats Paper \n"
+                "Paper beats Rock \n")
+            else:
+                print("game")
+            break
 
 welcome()
 rules()
