@@ -6,6 +6,10 @@ import time
 import os
 
 
+# constant with list of options for the player to choose
+options = ["rock", "paper", "scissors"]
+
+
 def clear():
     """
     Function to clear the terminal
@@ -49,15 +53,22 @@ def rules():
                 break
 
 
-def start_game():
-    options = ["rock", "paper", "scissors"]
-    player_option = input("please choose rock, paper or scissors : ")
+def player_choice():
+    """
+    Function to get players choice and to check if the choice is valid.
+    """
     while True:
-        if player_option not in ["rock", "paper", "scissors"]:
-            player_option = input("Not valiad answer. Please choose rock, paper or scissors : ")
-            continue
+        try:
+            player_option = input("please choose rock, paper or scissors : ")
+            if player_option not in options:
+                raise ValueError()
+        except ValueError:
+            print("Not valiad answer. Please choose rock, paper or scissors : ")
         else:
-            break
+            return player_option
+
+
+def start_game(player_option):
     computer_option = random.choice(options)
     print("3")
     time.sleep(0.75)
@@ -67,13 +78,15 @@ def start_game():
     time.sleep(0.75)
     print("show")
     time.sleep(0.1)
-    print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
+    print(player_option)
+    # print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
 
 
 def main():
     welcome()
     rules()
-    start_game()
+    player_option = player_choice()
+    start_game(player_option)
 
 if __name__ == "__main__":
     main()
