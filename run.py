@@ -1,5 +1,7 @@
 # selects a random option
 import random
+# can set a timer
+import time
 # clears terminal
 import os
 
@@ -43,8 +45,8 @@ def rules():
                 "Scissors beats Paper \n"
                 "Paper beats Rock \n")
             else:
-                print("game")
-            break
+                clear()
+                break
 
 
 def start_game():
@@ -55,9 +57,17 @@ def start_game():
             player_option = input("Not valiad answer. Please choose rock, paper or scissors : ")
             continue
         else:
-            print("well done")
-        break
-
+            break
+    computer_option = random.choice(options)
+    print("3")
+    time.sleep(0.75)
+    print("2")
+    time.sleep(0.75)
+    print("1")
+    time.sleep(0.75)
+    print("show")
+    time.sleep(0.1)
+    print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
 
 
 def main():
