@@ -1,5 +1,14 @@
 # selects a random option
 import random
+# clears terminal
+import os
+
+
+def clear():
+    """
+    Function to clear the terminal
+    """
+    os.system('clear')
 
 def welcome():
     """
@@ -28,6 +37,7 @@ def rules():
             continue
         else:
             if rules == 'y':
+                clear()
                 print("The rules of Rock, Paper, Scissors is simple. \n"
                 "Rock beats Scissors \n"
                 "Scissors beats Paper \n"
