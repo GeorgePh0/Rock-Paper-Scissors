@@ -73,8 +73,7 @@ def computer_choice():
     return computer_option
 
 
-def start_game(player_option):
-    computer_option = random.choice(options)
+def start_game(player_option, computer_option):
     print("3")
     time.sleep(0.75)
     print("2")
@@ -92,7 +91,8 @@ def main():
     welcome()
     rules()
     player_option = player_choice()
-    start_game(player_option)
+    computer_option = computer_choice()
+    start_game(player_option, computer_option)
 
 if __name__ == "__main__":
     main()
