@@ -8,6 +8,9 @@ import os
 
 # constant with list of options for the player to choose
 options = ["rock", "paper", "scissors"]
+# variables to keep the count of the scores
+player_score = 0
+computer_score = 0
 
 
 def clear():
@@ -15,6 +18,7 @@ def clear():
     Function to clear the terminal
     """
     os.system('clear')
+
 
 def welcome():
     """
@@ -96,6 +100,7 @@ def determine_winner(player_option, computer_option):
             print("computer wins")
         break
 
+
 def start_game(player_option, computer_option):
     """
     Function to start the game
@@ -118,6 +123,7 @@ def main():
     player_option = player_choice()
     computer_option = computer_choice()
     start_game(player_option, computer_option)
+
 
 if __name__ == "__main__":
     main()
