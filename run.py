@@ -34,6 +34,10 @@ def welcome():
 
 
 def rules():
+    """
+    Function to ask if the user wants to read the rules
+    or go straight into the game
+    """
     rules = input("\n If you would like to see the rules to the game press 'y'. \n"
     "If you would like to go into the game then press 'n' \n")
     print(rules)
@@ -69,11 +73,18 @@ def player_choice():
 
 
 def computer_choice():
+    """
+    Function to get the computers choice between the options
+    """
     computer_option = random.choice(options)
     return computer_option
 
 
 def determine_winner(player_option, computer_option):
+    """
+    Function to find out the winner or if the player and computer
+    had tied the game
+    """
     while True:
         if player_option == computer_option:
             print("That is a tie, choose again and try and beat the computer!")
@@ -86,6 +97,9 @@ def determine_winner(player_option, computer_option):
         break
 
 def start_game(player_option, computer_option):
+    """
+    Function to start the game
+    """
     print("3")
     time.sleep(0.75)
     print("2")
