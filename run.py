@@ -81,10 +81,8 @@ def start_game(player_option, computer_option):
     print("1")
     time.sleep(0.75)
     print("show")
-    time.sleep(0.1)
-    print(player_option)
-    print(computer_option)
-    # print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
+    time.sleep(0.2)
+    print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
 
 
 def main():
