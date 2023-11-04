@@ -77,8 +77,12 @@ def determine_winner(player_option, computer_option):
     while True:
         if player_option == computer_option:
             print("That is a tie, choose again and try and beat the computer!")
+        elif player_option == "rock" and computer_option == "scissors" or
+                player_option == "paper" and computer_option == "rock" or
+                player_option == "scissors" and computer_option == "paper":
+            print("you win")
         else:
-            print("game over")
+            print("computer wins")
         break
 
 
