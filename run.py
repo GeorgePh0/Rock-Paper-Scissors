@@ -73,6 +73,15 @@ def computer_choice():
     return computer_option
 
 
+def determine_winner(player_option, computer_option):
+    while True:
+        if player_option == computer_option:
+            print("That is a tie, choose again and try and beat the computer!")
+        else:
+            print("game over")
+        break
+
+
 def start_game(player_option, computer_option):
     print("3")
     time.sleep(0.75)
@@ -83,12 +92,7 @@ def start_game(player_option, computer_option):
     print("show")
     time.sleep(0.2)
     print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
-    while True:
-        if player_option == computer_option:
-            print("That is a tie, choose again and try and beat the computer!")
-        else:
-            print("game over")
-        break
+    determine_winner(player_option, computer_option)
 
 
 def main():
