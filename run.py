@@ -104,6 +104,10 @@ def determine_winner(player_option, computer_option):
         break
 
 
+def game_over():
+    return player_score == 2 or computer_score == 2
+
+
 def start_game():
     """
     Function to start the game
@@ -126,7 +130,7 @@ def start_game():
 
         determine_winner(player_option, computer_option)
         
-        if player_score == 2 or computer_score == 2:
+        if game_over():
             print("We have a winner")
             break
 
