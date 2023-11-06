@@ -41,7 +41,7 @@ def rules():
     Function to ask if the user wants to read the rules
     or go straight into the game
     """
-    rules = input("\n If you would like to see the rules to the game press 'y'. \n"
+    rules = input("\nIf you would like to see the rules to the game press 'y'. \n"
     "If you would like to go into the game then press 'n' \n")
     print(rules)
     while True:
@@ -55,6 +55,7 @@ def rules():
                 "Rock beats Scissors \n"
                 "Scissors beats Paper \n"
                 "Paper beats Rock \n")
+                break
             else:
                 clear()
                 break
@@ -91,14 +92,14 @@ def determine_winner(player_option, computer_option):
     global player_score, computer_score
     while True:
         if player_option == computer_option:
-            print("That is a tie, choose again and try and beat the computer!")
+            print("That is a tie, choose again and try and beat the computer! \n")
         elif (player_option == "rock" and computer_option == "scissors") or \
         (player_option == "paper" and computer_option == "rock") or \
         (player_option == "scissors" and computer_option == "paper"):
-            print("you win")
+            print("you win \n")
             player_score += 1
         else:
-            print("computer wins")
+            print("computer wins \n")
             computer_score += 1
         break
 
@@ -110,6 +111,8 @@ def start_game():
     while True:
         player_option = player_choice()
         computer_option = computer_choice()
+
+        clear()
 
         print("3")
         time.sleep(0.75)
@@ -129,6 +132,9 @@ def start_game():
 
 
 def main():
+    """
+    Main function to call all game functions
+    """
     welcome()
     rules()
     start_game()
