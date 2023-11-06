@@ -8,7 +8,9 @@ import os
 
 # constant with list of options for the player to choose
 options = ["rock", "paper", "scissors"]
-
+# variables to keep the count of the scores
+player_score = 0
+computer_score = 0
 
 def clear():
     """
@@ -86,6 +88,7 @@ def determine_winner(player_option, computer_option):
     Function to find out the winner or if the player and computer
     had tied the game
     """
+    global player_score, computer_score
     while True:
         if player_option == computer_option:
             print("That is a tie, choose again and try and beat the computer!")
@@ -93,8 +96,10 @@ def determine_winner(player_option, computer_option):
         (player_option == "paper" and computer_option == "rock") or \
         (player_option == "scissors" and computer_option == "paper"):
             print("you win")
+            player_score += 1
         else:
             print("computer wins")
+            computer_score += 1
         break
 
 
@@ -103,10 +108,6 @@ def start_game():
     Function to start the game
     """
     while True:
-        # variables to keep the count of the scores
-        player_score = 0
-        computer_score = 0
-        
         player_option = player_choice()
         computer_option = computer_choice()
 
@@ -121,7 +122,10 @@ def start_game():
         print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
 
         determine_winner(player_option, computer_option)
-        break
+        
+        if player_score == 2 or computer_score == 2:
+            print("We have a winner")
+            break
 
 
 def main():
