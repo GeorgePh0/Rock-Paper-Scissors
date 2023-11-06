@@ -108,6 +108,19 @@ def game_over():
     return player_score == 2 or computer_score == 2
 
 
+def restart():
+    while True:
+        restart_or_end = input("Would you like to play again? Yes or No: ")
+        if restart_or_end == 'y':
+            print("starting game again")
+            start_game()
+        elif restart_or_end == 'n':
+            print("ending game")
+            break
+        else:
+            print("invalid")
+
+
 def start_game():
     """
     Function to start the game
@@ -132,6 +145,7 @@ def start_game():
         
         if game_over():
             print("We have a winner")
+            restart()
             break
 
 
