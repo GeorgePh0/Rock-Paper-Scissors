@@ -8,9 +8,6 @@ import os
 
 # constant with list of options for the player to choose
 options = ["rock", "paper", "scissors"]
-# variables to keep the count of the scores
-player_score = 0
-computer_score = 0
 
 
 def clear():
@@ -101,28 +98,36 @@ def determine_winner(player_option, computer_option):
         break
 
 
-def start_game(player_option, computer_option):
+def start_game():
     """
     Function to start the game
     """
-    print("3")
-    time.sleep(0.75)
-    print("2")
-    time.sleep(0.75)
-    print("1")
-    time.sleep(0.75)
-    print("show")
-    time.sleep(0.2)
-    print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
-    determine_winner(player_option, computer_option)
+    while True:
+        # variables to keep the count of the scores
+        player_score = 0
+        computer_score = 0
+        
+        player_option = player_choice()
+        computer_option = computer_choice()
+
+        print("3")
+        time.sleep(0.75)
+        print("2")
+        time.sleep(0.75)
+        print("1")
+        time.sleep(0.75)
+        print("show")
+        time.sleep(0.2)
+        print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
+
+        determine_winner(player_option, computer_option)
+        break
 
 
 def main():
     welcome()
     rules()
-    player_option = player_choice()
-    computer_option = computer_choice()
-    start_game(player_option, computer_option)
+    start_game()
 
 
 if __name__ == "__main__":
