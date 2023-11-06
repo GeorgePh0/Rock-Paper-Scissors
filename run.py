@@ -121,6 +121,12 @@ def restart():
             print("invalid")
 
 
+def restart_score():
+    global player_score, computer_score
+    player_score = 0
+    computer_score = 0
+
+
 def start_game():
     """
     Function to start the game
@@ -145,6 +151,7 @@ def start_game():
         
         if game_over():
             print("We have a winner")
+            restart_score()
             restart()
             break
 
