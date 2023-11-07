@@ -105,23 +105,32 @@ def determine_winner(player_option, computer_option):
 
 
 def game_over():
+    """
+    Function to check if user or computer has won twice and to then end the game.
+    """
     return player_score == 2 or computer_score == 2
 
 
 def restart():
+    """
+    Function to ask the user if they would like to play again or to end the game.
+    """
     while True:
-        restart_or_end = input("Would you like to play again? Yes or No: ")
+        restart_or_end = input("Would you like to play again? y or n: ")
         if restart_or_end == 'y':
             print("starting game again")
             start_game()
         elif restart_or_end == 'n':
             print("ending game")
-            break
+            exit()
         else:
             print("invalid")
 
 
 def restart_score():
+    """
+    Function to restart the scores to 0
+    """
     global player_score, computer_score
     player_score = 0
     computer_score = 0
