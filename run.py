@@ -125,7 +125,7 @@ def restart():
             print("\nThank you for playing.\n")
             exit()
         else:
-            print("invalid")
+            print("\nInvalid. Please choose either 'y' for yes or 'n' for no\n")
 
 
 def restart_score():
@@ -160,7 +160,7 @@ def start_game():
         determine_winner(player_option, computer_option)
         
         if game_over():
-            print("We have a winner")
+            print("Game Over\n")
             restart_score()
             restart()
             break
