@@ -24,14 +24,15 @@ def welcome():
     Function prints a welcome message and asks the user
     if they want to learn the rules or go into the game
     """
-    print("Welcome to Rock Paper Scissor. \n")
+    print("Welcome to my Rock Paper Scissor. \n")
     player = " "
     while True:
         player = input("Please enter your name: ")
         if player.isalpha() is not True:
-            print("Error: Please enter letters only")
+            print("\nError: Please enter letters only\n")
             continue
         else:
+            clear()
             print(f'Hi {player}, welcome to the game')
             return player
 
@@ -42,7 +43,7 @@ def rules():
     or go straight into the game
     """
     rules = input("\nIf you would like to see the rules to the game press 'y'. \n"
-    "If you would like to go into the game then press 'n' \n")
+    "If you would like to go into the game then press 'n' \n: ")
     print(rules)
     while True:
         if rules not in ["y", "n"]:
@@ -118,10 +119,10 @@ def restart():
     while True:
         restart_or_end = input("Would you like to play again? y or n: ")
         if restart_or_end == 'y':
-            print("starting game again")
+            clear()
             start_game()
         elif restart_or_end == 'n':
-            print("ending game")
+            print("\nThank you for playing.\n")
             exit()
         else:
             print("invalid")
