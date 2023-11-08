@@ -22,6 +22,15 @@ Scissors beats Rock
 
 ## User Experience (UX)
 
+### User Stories
+
+- As a User, I would want to be able to:
+1. Understand the rules of the game
+2. Navigate around the game easily.
+3. See the options I have to chose from when deciding.
+4. Know who the winner is or if it is a tie.
+5. Know when the game ends.
+6. Replay the game if I want to or be able.
 
 ## Flow chart
 
