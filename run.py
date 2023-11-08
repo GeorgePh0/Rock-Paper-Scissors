@@ -44,18 +44,20 @@ def rules():
     Function to ask if the user wants to read the rules
     or go straight into the game
     """
-    rules = input("\nIf you would like to see the rules to the game press 'y', to continue to the game press 'n': ")
+    rules = input("\nIf you would like to see the rules to the game press 'y',\
+ to continue to the game press 'n': ")
     while True:
         if rules not in ["y", "n"]:
-            rules = input("\nNot valid answer. would you like the rules y for yes or n for no: ")
+            rules = input("\nNot valid answer. \
+            would you like the rules y for yes or n for no: ")
             continue
         else:
             if rules == 'y':
                 clear()
                 print("The rules of Rock, Paper, Scissors is simple. \n"
-                "Rock beats Scissors \n"
-                "Scissors beats Paper \n"
-                "Paper beats Rock \n")
+                      "Rock beats Scissors \n"
+                      "Scissors beats Paper \n"
+                      "Paper beats Rock \n")
                 break
             else:
                 clear()
@@ -93,10 +95,11 @@ def determine_winner(player_option, computer_option):
     global player_score, computer_score
     while True:
         if player_option == computer_option:
-            print("That is a tie, choose again and try and beat the computer! \n")
+            print("That is a tie, choose again and try and beat the computer! \
+            \n")
         elif (player_option == "rock" and computer_option == "scissors") or \
-        (player_option == "paper" and computer_option == "rock") or \
-        (player_option == "scissors" and computer_option == "paper"):
+             (player_option == "paper" and computer_option == "rock") or \
+             (player_option == "scissors" and computer_option == "paper"):
             print("you win \n")
             player_score += 1
         else:
@@ -107,14 +110,16 @@ def determine_winner(player_option, computer_option):
 
 def game_over():
     """
-    Function to check if user or computer has won twice and to then end the game.
+    Function to check if user or computer
+    has won twice and to then end the game.
     """
     return player_score == 2 or computer_score == 2
 
 
 def restart():
     """
-    Function to ask the user if they would like to play again or to end the game.
+    Function to ask the user
+    if they would like to play again or to end the game.
     """
     while True:
         restart_or_end = input("Would you like to play again? y or n: ")
@@ -125,7 +130,8 @@ def restart():
             print("\nThank you for playing.\n")
             exit()
         else:
-            print("\nInvalid. Please choose either 'y' for yes or 'n' for no\n")
+            print("\nInvalid. \
+            Please choose either 'y' for yes or 'n' for no\n")
 
 
 def restart_score():
@@ -155,10 +161,11 @@ def start_game():
         time.sleep(0.75)
         print("show")
         time.sleep(0.2)
-        print(f"\nYou chose {player_option}, computer chose {computer_option}.\n")
+        print(f"\nYou chose {player_option},\
+ computer chose {computer_option}.\n")
 
         determine_winner(player_option, computer_option)
-        
+
         if game_over():
             print("Game Over\n")
             restart_score()
