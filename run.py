@@ -44,19 +44,19 @@ def rules():
     Function to ask if the user wants to read the rules
     or go straight into the game
     """
-    rules = input("\To see the rules press 'y', else press 'n' to continue: ")
+    rules = input("\nTo see the rules press 'y', else press 'n' to continue: ")
     while True:
         if rules not in ["y", "n"]:
-            rules = input("\nNot valid answer. \
-            would you like the rules y for yes or n for no: ")
+            rules = input("\nInvalid.\
+ would you like the rules 'y' for yes or 'n' for no: ")
             continue
         else:
             if rules == 'y':
                 clear()
-                print("The rules of Rock, Paper, Scissors is simple. \n"
-                      "Rock beats Scissors \n"
-                      "Scissors beats Paper \n"
-                      "Paper beats Rock \n")
+                print("The rules of Rock, Paper, Scissors is simple.\n"
+                      "Rock beats Scissors\n"
+                      "Scissors beats Paper\n"
+                      "Paper beats Rock\n")
                 break
             else:
                 clear()
@@ -128,8 +128,8 @@ def restart():
             print("\nThank you for playing.\n")
             exit()
         else:
-            print("\nInvalid. \
-            Please choose either 'y' for yes or 'n' for no\n")
+            print("\nInvalid.\
+ Please choose either 'y' for yes or 'n' for no\n")
 
 
 def restart_score():

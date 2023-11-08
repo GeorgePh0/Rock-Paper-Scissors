@@ -37,6 +37,12 @@ Scissors beats Rock
 
 ## Features
 
+### Existing Features
+
+
+
+### Features to be added
+
 
 ## Technologies Used
 
