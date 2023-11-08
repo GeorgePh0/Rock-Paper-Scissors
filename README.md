@@ -22,6 +22,8 @@ Scissors beats Rock
 
 ## User Experience (UX)
 
+[Am I Responsive](images/am-i-responsive.jpg)
+
 ### User Stories
 
 - As a User, I would want to be able to:
@@ -39,7 +41,29 @@ Scissors beats Rock
 
 ### Existing Features
 
+[Start Game](images/start-game.jpg)
 
+[Invalid Name](images/invalid-letter.jpg)
+
+[Invalid input for rules](images/invalid-rules-input.jpg)
+
+[Rules](images/rules.jpg)
+
+[No Rules](images/no-rules.jpg)
+
+[Invalid input for game](images/invalid-letter-input.jpg)
+
+[User winning](images/playing.jpg)
+
+[Computer winning](images/computer-wins.jpg)
+
+[Tie the game](images/tie-game.jpg)
+
+[Game Over](images/game-over.jpg)
+
+[Invalid letter when game is over](images/invalid-letter-end-game.jpg)
+
+[End Game](images/end-game.jpg)
 
 ### Features to be added
 

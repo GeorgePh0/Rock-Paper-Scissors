@@ -1,7 +1,9 @@
 # selects a random option
 import random
+
 # can set a timer
 import time
+
 # clears terminal
 import os
 
@@ -47,16 +49,16 @@ def rules():
     rules = input("\nTo see the rules press 'y', else press 'n' to continue: ")
     while True:
         if rules not in ["y", "n"]:
-            rules = input("\nInvalid.\
- would you like the rules 'y' for yes or 'n' for no: ")
+            rules = input("\nInvalid. \
+would you like the rules 'y' for yes or 'n' for no: ")
             continue
         else:
             if rules == 'y':
                 clear()
                 print("The rules of Rock, Paper, Scissors is simple.\n"
-                      "Rock beats Scissors\n"
-                      "Scissors beats Paper\n"
-                      "Paper beats Rock\n")
+                    "Rock beats Scissors\n"
+                    "Scissors beats Paper\n"
+                    "Paper beats Rock\n")
                 break
             else:
                 clear()
@@ -96,8 +98,8 @@ def determine_winner(player_option, computer_option):
         if player_option == computer_option:
             print("That is a tie, choose again!\n")
         elif (player_option == "rock" and computer_option == "scissors") or \
-             (player_option == "paper" and computer_option == "rock") or \
-             (player_option == "scissors" and computer_option == "paper"):
+            (player_option == "paper" and computer_option == "rock") or \
+            (player_option == "scissors" and computer_option == "paper"):
             print("you win \n")
             player_score += 1
         else:
@@ -128,8 +130,8 @@ def restart():
             print("\nThank you for playing.\n")
             exit()
         else:
-            print("\nInvalid.\
- Please choose either 'y' for yes or 'n' for no\n")
+            print("\nInvalid. \
+Please choose either 'y' for yes or 'n' for no\n")
 
 
 def restart_score():
@@ -159,8 +161,8 @@ def start_game():
         time.sleep(0.75)
         print("show")
         time.sleep(0.2)
-        print(f"\nYou chose {player_option},\
- computer chose {computer_option}.\n")
+        print(f"\nYou chose {player_option}, \
+computer chose {computer_option}.\n")
 
         determine_winner(player_option, computer_option)
 
