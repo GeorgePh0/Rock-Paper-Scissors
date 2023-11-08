@@ -1,5 +1,13 @@
 # My Rock Paper Scissors Game
 
+This is my third project for Code Institute. This game is a Python terminal game.
+Rock Paper Scissors is a game where the user will go up against the computer to beat them.
+Ways of winning are:
+Rock beats Paper
+Paper beats Scissors
+Scissors beats Rock
+
+[Live project](https://pro3-rock-paper-scissors-c05fcd7fb8f7.herokuapp.com/)
 
 ## Index
 
