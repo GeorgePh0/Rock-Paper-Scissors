@@ -8,9 +8,11 @@ import os
 
 # constant with list of options for the player to choose
 options = ["rock", "paper", "scissors"]
+
 # variables to keep the count of the scores
 player_score = 0
 computer_score = 0
+
 
 def clear():
     """
@@ -24,7 +26,7 @@ def welcome():
     Function prints a welcome message and asks the user
     if they want to learn the rules or go into the game
     """
-    print("Welcome to my Rock Paper Scissor. \n")
+    print("Welcome to my Rock Paper Scissor game. \n")
     player = " "
     while True:
         player = input("Please enter your name: ")
@@ -33,7 +35,7 @@ def welcome():
             continue
         else:
             clear()
-            print(f'Hi {player}, welcome to the game')
+            print(f'Hi {player}, welcome to my game of rock, paper, scissors.')
             return player
 
 
@@ -42,12 +44,10 @@ def rules():
     Function to ask if the user wants to read the rules
     or go straight into the game
     """
-    rules = input("\nIf you would like to see the rules to the game press 'y'. \n"
-    "If you would like to go into the game then press 'n' \n: ")
-    print(rules)
+    rules = input("\nIf you would like to see the rules to the game press 'y', to continue to the game press 'n': ")
     while True:
         if rules not in ["y", "n"]:
-            rules = input("Not valid answer. would you like the rules Y / N \n")
+            rules = input("\nNot valid answer. would you like the rules y for yes or n for no: ")
             continue
         else:
             if rules == 'y':
@@ -72,7 +72,7 @@ def player_choice():
             if player_option not in options:
                 raise ValueError()
         except ValueError:
-            print("Not valiad answer. Please choose rock, paper or scissors : ")
+            print("\nNot valiad answer.\n")
         else:
             return player_option
 
