@@ -108,6 +108,8 @@ Scissors beats Rock
 
 ### Features to be added
 
+- Adding a difficulty level
+- Add Lizard Spock into the game. Adding this would make it a medium difficulty game as there is more options to choose and more ways of losing.
 
 ## Technologies Used
 
@@ -118,6 +120,19 @@ Scissors beats Rock
 
 
 ## Deployment
+
+This project was deployed to Heroku using the Code Institutes mock terminal. This was provided by Code Institutes python-template.
+
+The steps to deploy this project was:
+    - Create a new Heroku app
+    - Go to the settings and click Reveal Config Var
+    - In the Key box put PORT
+    - In the Value box put 8000
+    - Then underneath Add buildpack and choose Python and NodeJS in this order.
+    - Now go to the top and click on the Deploy tab.
+    - Here link GitHub and add the repository.
+    - Scroll down and Enable automatic deployment from main
+    - Under that click Deploy.
 
 
 ## Credits
