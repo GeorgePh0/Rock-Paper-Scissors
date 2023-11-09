@@ -175,7 +175,7 @@ There is no current bugs and everything is working correctly.
 
 This project was deployed to Heroku using the Code Institutes mock terminal. This was provided by Code Institutes python-template.
 
-The steps to deploy this project was:
+- The steps to deploy this project was:
     - Create a new Heroku app
     - Go to the settings and click Reveal Config Var
     - In the Key box put PORT
