@@ -191,7 +191,5 @@ This project was deployed to Heroku using the Code Institutes mock terminal. Thi
 
 My Mentor Brian Macharia for helping me and guiding me throughout the project.
 
-I used this link to know about the timer that was imported
- - https://realpython.com/python-sleep/
-I used this link to understand the game Rock Paper Scissors.
-    - https://realpython.com/python-rock-paper-scissors/
+I used this link to know about the timer that was imported https://realpython.com/python-sleep/
+I used this link to understand the game Rock Paper Scissors. https://realpython.com/python-rock-paper-scissors/
