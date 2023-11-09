@@ -121,6 +121,26 @@ Scissors beats Rock
 
 ## Testing
 
+### Validator Testing
+I used https://www.pythonchecker.com/ to validate my Python code.
+The code passed with no errors raised.
+
+### Browser
+- Google Chrome
+- Microsoft Edge
+- Microsoft Internet Explorer
+- Mozilla FireFox
+- Safari
+
+### Bugs
+
+There is no current bugs and everything is working correctly.
+
+#### Solved Bugs
+- If there was a tie in the game. I had a while loop that would keep looping because the user and computer had already chosen there option.
+    - I resolved this by adding a break at the end of the loop. This would then mean nobody gets a point and the user would have to input again.
+- With the resolved issue above. I then had to add a while loop in the start game function so that the game will continue until the if statement is true.
+    - The if statement was if the user or computer had 2 points then end the game.
 
 ## Deployment
 
