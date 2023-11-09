@@ -46,7 +46,8 @@ def rules():
     Function to ask if the user wants to read the rules
     or go straight into the game
     """
-    rules = input("\nTo see the rules press 'y', else press 'n' to continue: ").strip().lower()
+    rules = input("\nTo see the rules press 'y', else press 'n' to continue: "
+                  ).strip().lower()
     while True:
         if rules not in ["y", "n"]:
             rules = input("\nInvalid. \
@@ -56,9 +57,9 @@ would you like the rules 'y' for yes or 'n' for no: ").strip().lower()
             if rules == 'y':
                 clear()
                 print("The rules of Rock, Paper, Scissors is simple.\n"
-                    "Rock beats Scissors\n"
-                    "Scissors beats Paper\n"
-                    "Paper beats Rock\n")
+                      "Rock beats Scissors\n"
+                      "Scissors beats Paper\n"
+                      "Paper beats Rock\n")
                 break
             else:
                 clear()
@@ -71,7 +72,8 @@ def player_choice():
     """
     while True:
         try:
-            player_option = input("please choose rock, paper or scissors : ").strip().lower()
+            player_option = input("please choose rock, paper or scissors : "
+                                  ).strip().lower()
             if player_option not in options:
                 raise ValueError()
         except ValueError:
@@ -98,8 +100,8 @@ def determine_winner(player_option, computer_option):
         if player_option == computer_option:
             print("That is a tie, choose again!\n")
         elif (player_option == "rock" and computer_option == "scissors") or \
-            (player_option == "paper" and computer_option == "rock") or \
-            (player_option == "scissors" and computer_option == "paper"):
+             (player_option == "paper" and computer_option == "rock") or \
+             (player_option == "scissors" and computer_option == "paper"):
             print("you win \n")
             player_score += 1
         else:
@@ -122,7 +124,8 @@ def restart():
     if they would like to play again or to end the game.
     """
     while True:
-        restart_or_end = input("Would you like to play again? y or n: ").strip().lower()
+        restart_or_end = input("Would you like to play again? y or n: "
+                               ).strip().lower()
         if restart_or_end == 'y':
             clear()
             start_game()
@@ -131,7 +134,7 @@ def restart():
             exit()
         else:
             print("\nInvalid. \
-Please choose either 'y' for yes or 'n' for no\n").strip().lower()
+Please choose either 'y' for yes or 'n' for no: \n")
 
 
 def restart_score():
