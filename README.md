@@ -38,36 +38,53 @@ Scissors beats Rock
 
 - This flow chart explains the logic of Rock Paper Scissors.
 
-[Flow chart](images/flow-chart.jpg)
-
+![Flow chart](images/flow-chart.jpg)
 
 ## Features
 
 ### Existing Features
 
-[Start Game](images/start-game.jpg)
+#### 1. Welcome message
+    - This displays a message welcoming the user.
+    - It will ask the user to input their name.
 
-[Invalid Name](images/invalid-letter.jpg)
+![Start Game](images/start-game.jpg)
 
-[Invalid input for rules](images/invalid-rules-input.jpg)
+#### 2. Invalid name input
+    - This will happen if there is something other than letters.
 
-[Rules](images/rules.jpg)
+![Invalid Name](images/invalid-letter.jpg)
 
-[No Rules](images/no-rules.jpg)
+#### 3. Invalid input to see the rules
+    - This will happen if the user does not put the right input.
+    - (y) is for yes and will show the rules.
+    - (n) is for no and will go straight into the game.
 
-[Invalid input for game](images/invalid-letter-input.jpg)
+![Invalid input for rules](images/invalid-rules-input.jpg)
 
-[User winning](images/playing.jpg)
+#### 4. Showing the rules
+    - If the user chooses to see the rules they will then be displayed for them.
 
-[Computer winning](images/computer-wins.jpg)
+![Rules](images/rules.jpg)
 
-[Tie the game](images/tie-game.jpg)
+#### 5. Going into the game
+    - If the user chooses not to see the rules then it will enter the game.
 
-[Game Over](images/game-over.jpg)
+![No Rules](images/no-rules.jpg)
 
-[Invalid letter when game is over](images/invalid-letter-end-game.jpg)
+![Invalid input for game](images/invalid-letter-input.jpg)
 
-[End Game](images/end-game.jpg)
+![User winning](images/playing.jpg)
+
+![Computer winning](images/computer-wins.jpg)
+
+![Tie the game](images/tie-game.jpg)
+
+![Game Over](images/game-over.jpg)
+
+![Invalid letter when game is over](images/invalid-letter-end-game.jpg)
+
+![End Game](images/end-game.jpg)
 
 ### Features to be added
 
