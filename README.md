@@ -108,7 +108,8 @@ Scissors beats Rock
 
 ### Features to be added
 
-- Adding a difficulty level
+- Add r, p and s to make it simpler for user to choose instead of writing the word out.
+- Adding a difficulty level.
 - Add Lizard Spock into the game. Adding this would make it a medium difficulty game as there is more options to choose and more ways of losing.
 
 ## Technologies Used

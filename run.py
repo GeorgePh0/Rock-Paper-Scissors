@@ -31,14 +31,14 @@ def welcome():
     print("Welcome to my Rock Paper Scissor game. \n")
     player = " "
     while True:
-        player = input("Please enter your name: ")
+        player = input("Please enter your name: ").strip()
         if player.isalpha() is not True:
             print("\nError: Please enter letters only\n")
             continue
         else:
             clear()
             print(f'Hi {player}, welcome to my game of rock, paper, scissors.')
-            return player
+            break
 
 
 def rules():
@@ -46,11 +46,11 @@ def rules():
     Function to ask if the user wants to read the rules
     or go straight into the game
     """
-    rules = input("\nTo see the rules press 'y', else press 'n' to continue: ")
+    rules = input("\nTo see the rules press 'y', else press 'n' to continue: ").strip().lower()
     while True:
         if rules not in ["y", "n"]:
             rules = input("\nInvalid. \
-would you like the rules 'y' for yes or 'n' for no: ")
+would you like the rules 'y' for yes or 'n' for no: ").strip().lower()
             continue
         else:
             if rules == 'y':
@@ -71,7 +71,7 @@ def player_choice():
     """
     while True:
         try:
-            player_option = input("please choose rock, paper or scissors : ")
+            player_option = input("please choose rock, paper or scissors : ").strip().lower()
             if player_option not in options:
                 raise ValueError()
         except ValueError:
@@ -122,7 +122,7 @@ def restart():
     if they would like to play again or to end the game.
     """
     while True:
-        restart_or_end = input("Would you like to play again? y or n: ")
+        restart_or_end = input("Would you like to play again? y or n: ").strip().lower()
         if restart_or_end == 'y':
             clear()
             start_game()
@@ -131,7 +131,7 @@ def restart():
             exit()
         else:
             print("\nInvalid. \
-Please choose either 'y' for yes or 'n' for no\n")
+Please choose either 'y' for yes or 'n' for no\n").strip().lower()
 
 
 def restart_score():
