@@ -113,8 +113,11 @@ Scissors beats Rock
 
 ## Technologies Used
 
-- For my flow chart I used draw.io
-
+- Python
+- [Am I responsive](https://amiresponsive.co.uk/)
+- [Flow chart](https://draw.io)
+- [GitHub](https://github.com/)
+- [Heroku](https://dashboard.heroku.com/)
 
 ## Testing
 
@@ -136,3 +139,10 @@ The steps to deploy this project was:
 
 
 ## Credits
+
+My Mentor Brian Macharia for helping me and guiding me throughout the project.
+
+I used this link to know about the timer that was imported
+ - https://realpython.com/python-sleep/
+I used this link to understand the game Rock Paper Scissors.
+    - https://realpython.com/python-rock-paper-scissors/
