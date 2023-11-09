@@ -36,6 +36,10 @@ Scissors beats Rock
 
 ## Flow chart
 
+- This flow chart explains the logic of Rock Paper Scissors.
+
+[Flow chart](images/flow-chart.jpg)
+
 
 ## Features
 
@@ -69,6 +73,8 @@ Scissors beats Rock
 
 
 ## Technologies Used
+
+- For my flow chart I used draw.io
 
 
 ## Testing
